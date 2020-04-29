@@ -6,14 +6,46 @@
   width: 100%;
 }
 
+.swiper-about-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative;
+  margin-top: 0;
+  outline: none;
+
+  &::after {
+    color: #d4d4d4;
+    font-size: 24px;
+  }
+}
+
 .swiper-pagination {
+  margin: 0 15px;
   padding: 5px 0;
 }
+
+.swiper-pagination-about {
+  position: relative;
+  text-align: right;
+
+  .swiper-pagination-bullet {
+    margin: 0 15px;
+  }
+}
+
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 0;
 }
+
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;

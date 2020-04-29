@@ -24,3 +24,17 @@ body {
     color: #000000;
   }
 }
+
+.section-title {
+  font-size: $font-size-1;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: $font-size-3;
+}
+
+.section-text {
+  font-size: $font-size-3;
+  line-height: 26px;
+}
