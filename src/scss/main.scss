@@ -23,9 +23,11 @@
 @import
   'layout/header',
   'layout/navbar',
+  'layout/hero',
   'layout/footer';
 
 // 5. Подключение стилей компонентов
 @import
-  'components/button';
+  'components/button',
+  'components/slider';
 

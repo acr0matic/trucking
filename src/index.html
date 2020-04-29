@@ -50,6 +50,9 @@
   <!-- Подключение шрифта  -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <!-- Подключение стилей слайдера  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
   <!-- Стили -->
   <!-- build:css -->
   <link rel="stylesheet" href="css/style.css" />
@@ -96,13 +99,40 @@
   </header>
 
   <!-- Основной контент -->
-  <main></main>
+  <main>
+    <section id="hero">
+      <div class="swiper-container swiper-hero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-hero-image" src="img/slider/1.jpg" alt="">
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <img class="swiper-hero-image" src="img/slider/2.jpg" alt="">
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <img class="swiper-hero-image" src="img/slider/3.jpg" alt="">
+          </div>
+          <!-- /.swiper-slide -->
+
+        </div>
+        <!-- /.swiper-wrapper -->
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- /.swiper-container -->
+    </section>
+  </main>
 
   <!-- Подвал -->
   <footer></footer>
 
   <!-- Скрипты -->
   <!-- build:js -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="scripts/script.js"></script>
   <!-- endbuild -->
 
