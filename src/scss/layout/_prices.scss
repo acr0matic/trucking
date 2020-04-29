@@ -1,0 +1,81 @@
+#price-trucking {
+  display: none;
+}
+
+#price-vehicle {
+  display: none;
+}
+
+.price-block {
+  margin-top: 100px;
+}
+
+.table-trucking {
+  margin-top: 50px;
+}
+
+.vehicles-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+}
+
+.vehicle {
+  &-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &-image {
+    align-self: flex-start;
+  }
+
+  &-card-content {
+    width: 49%;
+    margin-top: 30px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+  }
+
+  &-specifications {
+    margin-top: 30px;
+  }
+
+  &-specifications-button {
+    color: #000000;
+    transition: color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: #919191;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/icons/arrow-down.svg");
+      width: 12px;
+      height: 12px;
+      margin-left: 15px;
+      padding: 5px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &-table-wrapper {
+    display: none;
+    width: 100%;
+
+    background-color: #f5f5f5;
+    padding: 20px 20px 30px 20px;
+    margin-top: 20px;
+  }
+}

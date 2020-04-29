@@ -26,10 +26,12 @@
   'layout/hero',
   'layout/about',
   'layout/services',
+  'layout/prices',
   'layout/footer';
 
 // 5. Подключение стилей компонентов
 @import
   'components/button',
+  'components/table',
   'components/slider';
 
