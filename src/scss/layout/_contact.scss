@@ -1,0 +1,70 @@
+.container-map {
+  position: relative;
+  height: 550px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.contact {
+  &-wrapper {
+    position: relative;
+    z-index: 1;
+
+    width: 400px;
+    padding: 30px;
+
+    margin-left: auto;
+    background-color: #ffffff;
+
+    box-shadow: 0 5px 15px 0 rgba(97, 51, 7, 0.2);
+  }
+
+  &-title {
+    margin-bottom: 30px;
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    @include from-end(3) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-icon {
+    width: 100%;
+    max-width: 26px;
+    margin-right: 15px;
+  }
+
+  &-info {
+    color: #000000;
+  }
+
+  &-phone {
+    font-weight: 600;
+  }
+
+  &-link {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+}
