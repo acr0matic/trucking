@@ -1,14 +1,11 @@
 #price-trucking {
-  display: none;
+  display: block;
 }
 
 #price-vehicle {
   display: none;
 }
 
-.price-block {
-  margin-top: 100px;
-}
 
 .table-trucking {
   margin-top: 50px;
@@ -18,7 +15,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-
 }
 
 .vehicle {
