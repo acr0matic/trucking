@@ -5,8 +5,15 @@
 // Основной цвет
 $palette-primary: #ffffff;
 
+// Брейкпоинты для адаптива
+$font-size-1: 32px;
+$font-size-2: 24px;
+$font-size-3: 16px;
+$font-size-4: 14px;
+$font-size-5: 12px;
+
 // Максимальная ширина контейнера
-$container-max-width: 1180px;
+$container-max-width: 1240px;
 
 // Брейкпоинты для адаптива
 $breakpoint-laptop: 1024px;
