@@ -16,3 +16,33 @@
 .section-text {
   margin-bottom: 20px;
 }
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.callback {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+  }
+
+  &-info {
+    margin-bottom: 5px;
+  }
+
+  &-phone {
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.politics {
+  color: #ff8315;
+}
