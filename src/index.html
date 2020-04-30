@@ -76,9 +76,6 @@
             <a href="" class="nav-link">Наши услуги</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Прейскурант</a>
-          </li>
-          <li class="nav-item">
             <a href="" class="nav-link">Почему мы?</a>
           </li>
           <li class="nav-item">
@@ -101,29 +98,32 @@
   <!-- Основной контент -->
   <main>
     <section id="hero">
-      <div class="swiper-container swiper-hero">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="swiper-hero-image" src="img/slider/1.jpg" alt="">
-          </div>
-          <!-- /.swiper-slide -->
+      <div class="container">
+        <div class="swiper-container swiper-hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-hero-image" src="img/slider/1.jpg" alt="">
+            </div>
+            <!-- /.swiper-slide -->
 
-          <div class="swiper-slide">
-            <img class="swiper-hero-image" src="img/slider/2.jpg" alt="">
-          </div>
-          <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <img class="swiper-hero-image" src="img/slider/2.jpg" alt="">
+            </div>
+            <!-- /.swiper-slide -->
 
-          <div class="swiper-slide">
-            <img class="swiper-hero-image" src="img/slider/3.jpg" alt="">
-          </div>
-          <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <img class="swiper-hero-image" src="img/slider/3.jpg" alt="">
+            </div>
+            <!-- /.swiper-slide -->
 
+          </div>
+          <!-- /.swiper-wrapper -->
+
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- /.swiper-wrapper -->
-
-        <div class="swiper-pagination"></div>
+        <!-- /.swiper-container -->
       </div>
-      <!-- /.swiper-container -->
+      <!-- /.container -->
     </section>
 
     <section id="about">
@@ -134,48 +134,47 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a data-fslightbox href="img/image.jpg">
-                <img class="swiper-hero-image" src="img/image.jpg" alt="">
+                <img class="img gallery-photo" src="img/image.jpg" alt="">
               </a>
             </div>
             <!-- /.swiper-slide -->
 
             <div class="swiper-slide">
               <a data-fslightbox href="img/image.jpg">
-                <img class="swiper-hero-image" src="img/image.jpg" alt="">
+                <img class="img gallery-photo" src="img/image.jpg" alt="">
               </a>
             </div>
             <!-- /.swiper-slide -->
 
             <div class="swiper-slide">
               <a data-fslightbox href="img/image.jpg">
-                <img class="swiper-hero-image" src="img/image.jpg" alt="">
+                <img class="img gallery-photo" src="img/image.jpg" alt="">
               </a>
             </div>
             <!-- /.swiper-slide -->
 
             <div class="swiper-slide">
               <a data-fslightbox href="img/image.jpg">
-                <img class="swiper-hero-image" src="img/image.jpg" alt="">
+                <img class="img gallery-photo" src="img/image.jpg" alt="">
               </a>
             </div>
             <!-- /.swiper-slide -->
 
             <div class="swiper-slide">
               <a data-fslightbox href="img/image.jpg">
-                <img class="swiper-hero-image" src="img/image.jpg" alt="">
+                <img class="img gallery-photo" src="img/image.jpg" alt="">
               </a>
             </div>
             <!-- /.swiper-slide -->
 
             <div class="swiper-slide">
               <a data-fslightbox href="img/image.jpg">
-                <img class="swiper-hero-image" src="img/image.jpg" alt="">
+                <img class="img gallery-photo" src="img/image.jpg" alt="">
               </a>
             </div>
             <!-- /.swiper-slide -->
           </div>
           <!-- /.swiper-wrapper -->
-
         </div>
         <!-- /.swiper-container -->
 
@@ -203,14 +202,14 @@
         <input type="radio" id="trucking" name="service">
         <input type="radio" id="vehicle" name="service">
         <div class="services-wrapper">
-          <label for="trucking" class="service-card">
-            <img src="img/service.png" alt="" class="service-img">
+          <label id="trucking-radio" for="trucking" class="service-card service-card-active">
+            <img src="img/service.png" alt="" class="img service-img">
             <h3 class="service-title">Грузоперевозки и доставка</h3>
           </label>
           <!-- /.services-card -->
 
-          <label for="vehicle" class="service-card">
-            <img src="img/service.png" alt="" class="service-img">
+          <label id="vehicle-radio" for="vehicle" class="service-card">
+            <img src="img/service.png" alt="" class="img service-img">
             <h3 class="service-title">Аренда строительной техники</h3>
           </label>
           <!-- /.services-card -->
@@ -657,9 +656,6 @@
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">Наши услуги</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Прейскурант</a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">Почему мы?</a>

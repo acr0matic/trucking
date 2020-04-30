@@ -49,10 +49,16 @@ var vehicleController = document.getElementById("vehicle");
 var truckingPrice = document.getElementById("price-trucking");
 var vehiclePrice = document.getElementById("price-vehicle");
 
+var truckingRadio = document.getElementById("trucking-radio")
+var vehicleRadio = document.getElementById("vehicle-radio")
+
 truckingController.addEventListener("change", () => {
   if (truckingController.checked) {
     vehiclePrice.style.display = "none";
     truckingPrice.style.display = "block";
+
+    truckingRadio.classList.add("service-card-active");
+    vehicleRadio.classList.remove("service-card-active");
   }
 });
 
@@ -60,6 +66,9 @@ vehicleController.addEventListener("change", () => {
   if (vehicleController.checked) {
     vehiclePrice.style.display = "block";
     truckingPrice.style.display = "none";
+
+    truckingRadio.classList.remove("service-card-active");
+    vehicleRadio.classList.add("service-card-active");
   }
 });
 
