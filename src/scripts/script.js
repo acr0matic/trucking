@@ -1,4 +1,6 @@
 /*global Swiper */
+/*global MicroModal */
+/*global AJAXform */
 
 var heroSwiper = new Swiper(".swiper-hero", {
   // Optional parameters
@@ -49,8 +51,8 @@ var vehicleController = document.getElementById("vehicle");
 var truckingPrice = document.getElementById("price-trucking");
 var vehiclePrice = document.getElementById("price-vehicle");
 
-var truckingRadio = document.getElementById("trucking-radio")
-var vehicleRadio = document.getElementById("vehicle-radio")
+var truckingRadio = document.getElementById("trucking-radio");
+var vehicleRadio = document.getElementById("vehicle-radio");
 
 truckingController.addEventListener("change", () => {
   if (truckingController.checked) {
@@ -71,7 +73,6 @@ vehicleController.addEventListener("change", () => {
     vehicleRadio.classList.add("service-card-active");
   }
 });
-
 
 var vehicles = document.querySelectorAll(".vehicle-card");
 
@@ -94,3 +95,27 @@ for (const vehicle of vehicles) {
     }
   });
 }
+
+var callbackButton = document.getElementById("callback-button");
+callbackButton.addEventListener("click", () => {
+  AddPolicyAction(callbackForm);
+  MicroModal.show("modal-callback");
+});
+
+function AddPolicyAction(form) {
+  let policy = form.querySelector(".policy");
+  let orderButton = form.querySelector(".button-order");
+
+  orderButton.setAttribute("disabled", "disabled");
+  policy.checked = false;
+
+  policy.addEventListener("change", () => {
+    if (policy.checked) orderButton.removeAttribute("disabled");
+    else orderButton.setAttribute("disabled", "disabled");
+  });
+}
+
+var callbackForm = document.getElementById("callbackForm");
+
+AJAXform(callbackForm);
+

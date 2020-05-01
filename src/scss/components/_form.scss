@@ -1,0 +1,33 @@
+#callbackForm {
+  padding: 10px 0;
+
+  .form-title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: $font-size-1;
+  }
+
+  .form-text {
+    margin-bottom: 25px;
+  }
+
+  .input {
+    margin-bottom: 15px;
+  }
+
+  .checkbox-policy {
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    label {
+      font-size: $font-size-4;
+    }
+  }
+}
+
+.form-error-label {
+  display: none;
+  margin-top: 25px;
+  color: #fc7c7c;
+  text-align: center;
+}
