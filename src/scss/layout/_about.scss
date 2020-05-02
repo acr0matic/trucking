@@ -1,6 +1,9 @@
 #about {
   .gallery-photo {
     max-width: 285px;
+    height: 285px;
+
+    object-fit: cover;
   }
 }
 

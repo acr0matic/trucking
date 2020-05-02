@@ -25,10 +25,18 @@
 
     width: 100%;
     margin-bottom: 50px;
+
+    a {
+      width: 49%;
+    }
   }
 
   &-image {
     align-self: flex-start;
+    width: 100%;
+    max-height: 300px;
+
+    object-fit: cover;
   }
 
   &-card-content {
