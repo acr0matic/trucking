@@ -4,6 +4,10 @@
     height: 285px;
 
     object-fit: cover;
+
+    @include breakpoint($breakpoint-laptop) {
+      max-width: none;
+    }
   }
 }
 

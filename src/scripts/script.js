@@ -13,11 +13,6 @@ var heroSwiper = new Swiper(".swiper-hero", {
   pagination: {
     el: ".swiper-pagination",
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
 });
 
 var aboutSwiper = new Swiper(".swiper-about", {
@@ -36,9 +31,14 @@ var aboutSwiper = new Swiper(".swiper-about", {
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  breakpoints: {
+    720: {
+      slidesPerView: 3,
+    },
+
+    1075: {
+      slidesPerView: 4,
+    },
   },
 });
 
@@ -118,4 +118,3 @@ function AddPolicyAction(form) {
 var callbackForm = document.getElementById("callbackForm");
 
 AJAXform(callbackForm);
-

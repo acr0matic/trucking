@@ -6,6 +6,10 @@
   &-item {
     margin: 0 10px;
 
+    @include breakpoint($breakpoint-laptop) {
+      margin: 0 5px;
+    }
+
     &:hover .nav-link {
       opacity: 0.6;
     }

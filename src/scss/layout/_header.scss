@@ -14,10 +14,26 @@ header {
 
   nav {
     margin-left: 50px;
+
+    @include breakpoint($breakpoint-laptop) {
+      margin-left: 15px;
+    }
   }
 
   .callback-wrapper {
     margin-left: auto;
     margin-right: 20px;
+  }
+
+  .logo-link {
+    max-width: 200px;
+
+    @include breakpoint($breakpoint-laptop) {
+      max-width: 175px;
+    }
+  }
+
+  .logo-img {
+    width: 100%;
   }
 }

@@ -12,13 +12,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @include breakpoint($breakpoint-laptop) {
+    justify-content: center;
+  }
+
   margin-top: 50px;
 }
 
 .advantage {
   text-align: center;
-  max-width: 170px;
+  width: 14%;
   line-height: 22px;
+
+  @include breakpoint($breakpoint-laptop) {
+    width: 33%;
+  }
 
   &-icon {
     width: 100%;
