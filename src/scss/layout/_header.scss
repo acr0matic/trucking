@@ -18,11 +18,21 @@ header {
     @include breakpoint($breakpoint-laptop) {
       margin-left: 15px;
     }
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   .callback-wrapper {
     margin-left: auto;
     margin-right: 20px;
+  }
+
+  button {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   .logo-link {

@@ -15,6 +15,10 @@ footer {
 
   nav {
     margin-left: 30px;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   .callback-wrapper {

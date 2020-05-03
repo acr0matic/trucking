@@ -18,6 +18,18 @@
   &-link {
     transition: opacity 0.3s ease;
   }
+
+  &-mobile-button {
+    display: none;
+
+    @include breakpoint($breakpoint-tablet) {
+      position: absolute;
+      z-index: 1001;
+      right: 0;
+
+      display: block;
+    }
+  }
 }
 
 footer {
