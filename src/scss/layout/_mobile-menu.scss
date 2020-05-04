@@ -1,45 +1,82 @@
 #mobile-menu {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-
   .mobile-menu-wrapper {
-    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    visibility: hidden;
   }
 
   .is-open {
+    visibility: visible;
+
     .menu-wrapper {
-      transform: translateX(0%) !important;
+      transform: translateX(0%);
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.5) !important;
+      opacity: 1;
     }
   }
 
   .overlay {
     height: 100%;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+
+    transition: opacity 0.2s ease;
+
   }
 
   .menu-wrapper {
     display: flex;
     flex-direction: column;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
     width: 40%;
     height: 100%;
+
     margin-left: auto;
     background-color: #ffffff;
+
     transform: translateX(100%);
     transition: all 0.3s ease;
   }
 
-  .logo-link {
+  .menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     margin-top: 17px;
-    margin-left: 10px;
-    margin-right: auto;
+    margin-right: 10px;
+    margin-left: 25px;
+
+    .logo-link {
+      width: 80%;
+    }
+
+    .logo-img {
+      width: 100%;
+    }
+
+    .nav-mobile-button {
+      margin-left: 30px;
+      padding: 0;
+
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after {
+        width: 20px;
+        height: 2px;
+      }
+    }
   }
 
   .nav-navbar {
@@ -50,13 +87,22 @@
   }
 
   .nav-item {
-    margin: 15px 0;
+    width: 90%;
+
+    padding: 15px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(5px);
+    }
 
     &:after {
       content: "";
       display: block;
       border-bottom: 1px solid #e0e0e0;
-      width: 90%;
+      width: 100%;
       margin-top: 10px;
     }
   }
@@ -69,5 +115,9 @@
     margin-top: auto;
     margin-bottom: 30px;
     text-align: center;
+  }
+
+  .button {
+    margin: 0 auto 30px auto;
   }
 }

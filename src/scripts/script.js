@@ -96,11 +96,16 @@ for (const vehicle of vehicles) {
   });
 }
 
-var callbackButton = document.getElementById("callback-button");
-callbackButton.addEventListener("click", () => {
-  AddPolicyAction(callbackForm);
-  MicroModal.show("modal-callback");
-});
+var callbackButtons = document.querySelectorAll("[data-callback-button]");
+
+for (const button of callbackButtons) {
+  button.addEventListener("click", () => {
+    AddPolicyAction(callbackForm);
+    MicroModal.show("modal-callback");
+  });
+
+}
+
 
 function AddPolicyAction(form) {
   let policy = form.querySelector(".policy");
@@ -120,9 +125,18 @@ var callbackForm = document.getElementById("callbackForm");
 AJAXform(callbackForm);
 
 // Look for .hamburger
-var hamburger = document.querySelector(".hamburger");
+var hamburgers = document.querySelectorAll(".hamburger");
 // On click
-hamburger.addEventListener("click", function () {
-  // Toggle class "is-active"
-  hamburger.classList.toggle("is-active");
-});
+
+for (const hamburger of hamburgers) {
+  hamburger.addEventListener("click", function () {
+    OpenMenu();
+  });
+}
+
+function OpenMenu() {
+  let menu = document.querySelector("#mobile-menu");
+  let wrapper = menu.querySelector(".mobile-menu-wrapper");
+
+  wrapper.classList.toggle("is-open");
+}
