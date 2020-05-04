@@ -9,6 +9,13 @@
       max-width: none;
     }
   }
+
+  .swiper-about-controls {
+    @include breakpoint($breakpoint-tablet-small) {
+      justify-content: space-between;
+      margin: 15px 0;
+    }
+  }
 }
 
 .swiper-about {

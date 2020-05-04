@@ -1,12 +1,22 @@
+.table-wrapper {
+
+  @include breakpoint($breakpoint-tablet-small) {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
 .table-trucking {
   width: 100%;
 
   border: 1px solid #f2f2f2;
   border-collapse: collapse;
 
+
   th,
   td {
     padding: 10px;
+
   }
 
   th {

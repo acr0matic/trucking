@@ -47,6 +47,10 @@
 
     transform: translateX(100%);
     transition: all 0.3s ease;
+
+    @include breakpoint($breakpoint-tablet-small) {
+      width: 50%;
+    }
   }
 
   .menu-header {

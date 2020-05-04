@@ -32,6 +32,10 @@ body {
 .section-title {
   font-size: $font-size-1;
   text-transform: uppercase;
+
+  @include breakpoint($breakpoint-tablet-small) {
+    font-size: $font-size-1 - 6;
+  }
 }
 
 .section-subtitle {

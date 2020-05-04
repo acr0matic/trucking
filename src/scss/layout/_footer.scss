@@ -11,6 +11,15 @@ footer {
     @include last-child {
       margin-top: 40px;
     }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0 40px;
+    }
+
+    @include breakpoint($breakpoint-tablet-small) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   nav {
@@ -23,9 +32,30 @@ footer {
 
   .callback-wrapper {
     margin-left: auto;
+
+    @include breakpoint($breakpoint-tablet-small) {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+    .callback-info {
+      @include breakpoint($breakpoint-tablet-small) {
+        text-align: center;
+      }
+    }
   }
 
   .company-info {
     margin-right: 40px;
+
+    @include breakpoint($breakpoint-tablet-small) {
+      margin-right: 0;
+    }
+  }
+
+  .politics {
+    @include breakpoint($breakpoint-tablet-small) {
+      margin-top: 20px;
+    }
   }
 }
