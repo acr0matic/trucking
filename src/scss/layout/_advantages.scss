@@ -16,6 +16,10 @@
     justify-content: center;
   }
 
+  @include breakpoint($breakpoint-mobile-large) {
+    justify-content: flex-start;
+  }
+
   margin-top: 50px;
 }
 
@@ -26,6 +30,10 @@
 
   @include breakpoint($breakpoint-laptop) {
     width: 33%;
+  }
+
+  @include breakpoint($breakpoint-mobile-large) {
+    width: 49%;
   }
 
   &-icon {

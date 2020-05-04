@@ -19,7 +19,7 @@ var aboutSwiper = new Swiper(".swiper-about", {
   // Optional parameters
   loop: false,
   spaceBetween: 30,
-  slidesPerView: 2,
+  slidesPerView: 1,
 
   // If we need pagination
   pagination: {
@@ -32,6 +32,10 @@ var aboutSwiper = new Swiper(".swiper-about", {
   },
 
   breakpoints: {
+    530: {
+      slidesPerView: 2,
+    },
+
     740: {
       slidesPerView: 3,
     },

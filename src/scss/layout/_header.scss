@@ -27,6 +27,10 @@ header {
   .callback-wrapper {
     margin-left: auto;
     margin-right: 20px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
   }
 
   button {

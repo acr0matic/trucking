@@ -6,6 +6,10 @@
     display: flex;
     align-items: center;
     height: 100%;
+
+    @include breakpoint($breakpoint-tablet-small) {
+      align-items: flex-start;
+    }
   }
 }
 
@@ -22,6 +26,11 @@
     border-radius: 10px;
 
     box-shadow: 0 5px 15px 0 rgba(97, 51, 7, 0.2);
+
+    @include breakpoint($breakpoint-tablet-small) {
+      margin-right: auto;
+      width: 100%;
+    }
   }
 
   &-title {
@@ -68,4 +77,8 @@
   left: 0;
 
   width: 100%;
+
+  @include breakpoint($breakpoint-tablet-small) {
+    top: 150px;
+  }
 }

@@ -36,6 +36,11 @@ body {
   @include breakpoint($breakpoint-tablet-small) {
     font-size: $font-size-1 - 6;
   }
+
+  @include breakpoint($breakpoint-mobile-large) {
+    text-align: center;
+    line-height: 35px;
+  }
 }
 
 .section-subtitle {

@@ -25,6 +25,10 @@
     @include breakpoint($breakpoint-tablet) {
       display: block;
     }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-left: auto;
+    }
   }
 }
 
