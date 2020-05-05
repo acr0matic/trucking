@@ -1,3 +1,13 @@
+#price {
+  @include breakpoint($breakpoint-mobile-large) {
+    margin-top: 50px;
+  }
+
+  @include breakpoint($breakpoint-mobile-medium) {
+    margin-top: 0;
+  }
+}
+
 #price-trucking {
   display: block;
 }

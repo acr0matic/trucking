@@ -23,7 +23,7 @@ html {
 section {
   padding: 55px 0;
 
-  @include breakpoint($breakpoint-mobile-medium) {
+  @include breakpoint($breakpoint-mobile-large) {
     padding: 25px 0;
   }
 }
