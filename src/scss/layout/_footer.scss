@@ -61,6 +61,7 @@ footer {
   .politics {
     @include breakpoint($breakpoint-tablet-small) {
       margin-top: 20px;
+      text-align: center;
     }
   }
 }

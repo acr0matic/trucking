@@ -22,6 +22,10 @@ html {
 
 section {
   padding: 55px 0;
+
+  @include breakpoint($breakpoint-mobile-medium) {
+    padding: 25px 0;
+  }
 }
 
 h1,

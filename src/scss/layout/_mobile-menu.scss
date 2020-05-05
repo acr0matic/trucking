@@ -55,6 +55,10 @@
     @include breakpoint($breakpoint-mobile-large) {
       width: 70%;
     }
+
+    @include breakpoint($breakpoint-tablet-small) {
+      width: 80%;
+    }
   }
 
   .menu-header {

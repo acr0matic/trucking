@@ -50,4 +50,8 @@ body {
 .section-text {
   font-size: $font-size-3;
   line-height: 26px;
+
+  @include breakpoint($breakpoint-mobile-small) {
+    text-align: justify;
+  }
 }
