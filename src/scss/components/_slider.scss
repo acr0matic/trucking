@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .swiper-container {
   height: 100%;
 }
@@ -32,7 +33,20 @@
 .swiper-pagination {
   margin: 0 15px;
   padding: 5px 0;
+}
 
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffc827;
 }
 
 .swiper-pagination-about {
@@ -53,20 +67,4 @@
 .swiper-pagination-fraction {
   bottom: 0;
 }
-
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-}
-
-.swiper-container-horizontal
-  > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 10px;
-}
-.swiper-pagination-bullet-active {
-  background: #ffc827;
-}
-
-.test {
-  background-color: #ffdf4f;
-}
+/*! purgecss end ignore */
