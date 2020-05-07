@@ -11,7 +11,35 @@
   }
 
   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     position: relative;
     height: 100%;
+  }
+
+  .hero-content {
+    width: 50%;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .title {
+    margin-bottom: 30px;
+    line-height: 55px;
+    font-size: $font-size-0;
+  }
+
+  .subtitle {
+    margin-bottom: 30px;
+    line-height: 25px;
+  }
+
+  .swiper-hero {
+    width: 50%;
   }
 }
