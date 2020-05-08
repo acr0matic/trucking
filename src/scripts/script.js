@@ -134,3 +134,8 @@ for (const hamburger of hamburgers) {
     Menu();
   });
 }
+
+var heroButton = document.querySelector("[data-button-nav");
+heroButton.onclick = () => {
+  SmoothScroll(heroButton.getAttribute("data-button-nav"));
+};
