@@ -3,31 +3,41 @@
 \**************************/
 
 .modal {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: -apple-system,
+ BlinkMacSystemFont,
+ avenir next,
+ avenir,
+    helvetica neue,
+ helvetica,
+ ubuntu,
+ roboto,
+ noto,
+ segoe ui,
+ arial,
+ sans-serif;
 }
 
 .modal__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 100;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .modal__container {
-  background-color: #fff;
-  padding: 30px;
+  box-sizing: border-box;
   max-width: 500px;
   max-height: 100vh;
+  padding: 30px;
+  background-color: #fff;
   border-radius: 4px;
   overflow-y: auto;
-  box-sizing: border-box;
 }
 
 .modal__close {

@@ -1,6 +1,7 @@
 /*global Swiper */
 /*global MicroModal */
 /*global AJAXform */
+/*global Menu */
 
 var heroSwiper = new Swiper(".swiper-hero", {
   // Optional parameters
@@ -107,9 +108,7 @@ for (const button of callbackButtons) {
     AddPolicyAction(callbackForm);
     MicroModal.show("modal-callback");
   });
-
 }
-
 
 function AddPolicyAction(form) {
   let policy = form.querySelector(".policy");
@@ -128,16 +127,10 @@ var callbackForm = document.getElementById("callbackForm");
 
 AJAXform(callbackForm);
 
-// Look for .hamburger
 var hamburgers = document.querySelectorAll(".hamburger");
-// On click
 
 for (const hamburger of hamburgers) {
   hamburger.addEventListener("click", function () {
-    OpenMenu();
+    Menu();
   });
-}
-
-function OpenMenu() {
-  wrapper.classList.toggle("is-open");
 }

@@ -18,4 +18,5 @@
     $value: breakpoint-to-base-em($value);
   }
 
-  @return '(#{$feature}: #{$value})'; }
+  @return '(#{$feature}: #{$value})';
+ }
