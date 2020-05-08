@@ -1,5 +1,5 @@
 #hero {
-  padding-top: 0;
+  padding-bottom: 15px;
 
   background-color: #fcfcfc;
 
@@ -38,19 +38,36 @@
     font-size: $font-size-0;
     text-transform: uppercase;
 
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size-0 - 10;
+    }
+
     @include breakpoint($breakpoint-tablet-small) {
       margin-top: 30px;
+      font-size: $font-size-0 - 12;
+      text-align: center;
+      line-height: 45px;
+
     }
 
     @include breakpoint($breakpoint-mobile-large) {
       margin-top: 30px;
-      font-size: $font-size-0 - 12;
+    }
+
+    @include breakpoint($breakpoint-mobile-medium) {
+      font-size: $font-size-0 - 18;
+      line-height: 35px;
     }
   }
 
   .subtitle {
     margin-bottom: 30px;
     line-height: 25px;
+
+    @include breakpoint($breakpoint-tablet-small) {
+
+      text-align: center;
+    }
   }
 
   .swiper-hero {
@@ -63,8 +80,15 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
+    @include breakpoint($breakpoint-tablet) {
+      width: 45%;
+      height: 350px;
+    }
+
     @include breakpoint($breakpoint-tablet-small) {
       width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
     }
 
     @include breakpoint($breakpoint-mobile-large) {
