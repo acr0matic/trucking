@@ -139,8 +139,5 @@ for (const hamburger of hamburgers) {
 }
 
 function OpenMenu() {
-  let menu = document.querySelector("#mobile-menu");
-  let wrapper = menu.querySelector(".mobile-menu-wrapper");
-
   wrapper.classList.toggle("is-open");
 }

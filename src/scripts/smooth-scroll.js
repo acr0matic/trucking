@@ -20,7 +20,5 @@ function SmoothScroll(blockID) {
 
   else
     window.open(blockID, "_self");
-
-    OpenMenu();
 }
 
