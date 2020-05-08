@@ -33,7 +33,7 @@
   }
 
   .title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 55px;
     font-size: $font-size-0;
     text-transform: uppercase;
@@ -73,6 +73,8 @@
   }
 
   .button {
+    margin-top: 20px;
+
     @include breakpoint($breakpoint-mobile-large) {
       width: 100%;
     }
