@@ -1,17 +1,80 @@
 #hero {
-  height: 450px;
   padding-top: 0;
+
+  background-color: #fcfcfc;
 
   @include breakpoint($breakpoint-tablet) {
     margin-top: 80px;
   }
 
-  @include breakpoint($breakpoint-mobile-large) {
-    height: 300px;
+  @include breakpoint($breakpoint-tablet-small) {
+    padding-bottom: 15px;
   }
 
   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     position: relative;
     height: 100%;
+
+    @include breakpoint($breakpoint-tablet-small) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .hero-content {
+    width: 47%;
+
+    @include breakpoint($breakpoint-tablet-small) {
+      width: 100%;
+    }
+  }
+
+  .title {
+    margin-bottom: 30px;
+    line-height: 55px;
+    font-size: $font-size-0;
+    text-transform: uppercase;
+
+    @include breakpoint($breakpoint-tablet-small) {
+      margin-top: 30px;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-top: 30px;
+      font-size: $font-size-0 - 12;
+    }
+  }
+
+  .subtitle {
+    margin-bottom: 30px;
+    line-height: 25px;
+  }
+
+  .swiper-hero {
+    width: 50%;
+    height: 400px;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    @include breakpoint($breakpoint-tablet-small) {
+      width: 100%;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
+      height: 250px;
+    }
+  }
+
+  .button {
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 100%;
+    }
   }
 }
