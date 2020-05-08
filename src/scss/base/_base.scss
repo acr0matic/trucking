@@ -21,7 +21,7 @@ html {
 }
 
 section {
-  padding: 55px 0;
+  margin-bottom: 55px;
 
   @include breakpoint($breakpoint-mobile-large) {
     padding: 25px 0;
