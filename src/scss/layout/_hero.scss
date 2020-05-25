@@ -48,7 +48,6 @@
       font-size: $font-size-0 - 12;
       text-align: center;
       line-height: 45px;
-
     }
 
     @include breakpoint($breakpoint-mobile-large) {
@@ -66,7 +65,6 @@
     line-height: 25px;
 
     @include breakpoint($breakpoint-tablet-small) {
-
       text-align: center;
     }
   }
@@ -97,10 +95,27 @@
     }
   }
 
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      justify-content: space-between;
+    }
+
+    @include breakpoint($breakpoint-mobile-small) {
+      flex-direction: column;
+    }
+  }
+
   .button {
     margin-top: 20px;
 
     @include breakpoint($breakpoint-mobile-large) {
+      width: 47%;
+    }
+
+    @include breakpoint($breakpoint-mobile-small) {
       width: 100%;
     }
   }

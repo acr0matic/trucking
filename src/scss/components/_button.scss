@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .button {
-  width: 190px;
+  width: 220px;
   height: 55px;
 
   border: 0;
@@ -22,13 +22,25 @@
 
   &-primary {
     color: #ffffff;
-    background-color: #ffc827;
+    background-color: #ffe345;
     background-image: linear-gradient(180deg, #ffe345 0%, #ffc222 100%);
+
+    // #8fdf50
+  }
+
+  &-secondary {
+    background-color: transparent;
+    border: 2px solid #ffe345;
+
+    margin-left: 15px;
+
+    @include breakpoint($breakpoint-mobile-small) {
+      margin-left: 0;
+    }
   }
 
   &-shadow {
-    box-shadow: 0 0 10px 0 #ffde4e;
-    width: 250px;
+    box-shadow: 0 0 10px 0 #ffe345;
   }
 
   &:disabled {

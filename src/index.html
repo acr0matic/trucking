@@ -108,7 +108,11 @@
         <div class="hero-content">
           <h1 class="title">Грузоперевозки и аренда техники</h1>
           <p class="subtitle">Наша компания занимается доставкой песка, грунта, щебня, удобрений и асфальта. Также, мы арендуем строительную технику для решения ваших задач.</p>
-          <button data-button-nav="#about" class="button button-primary button-shadow">Подробнее</button>
+          <div class="hero-buttons">
+            <button data-button-nav="#about" class="button button-primary button-shadow">Подробнее</button>
+            <button id="discount" class="button button-secondary">Скидки</button>
+          </div>
+          <!-- /.hero-buttons -->
         </div>
         <!-- /.hero-content -->
 
@@ -737,7 +741,7 @@
 
         <div class="callback-wrapper">
           <span class="callback-info">Ежедневно с 9:00 до 22:00</span>
-          <a href="tel:" class="callback-phone">+7 (900) 000-00-00</a>
+          <a href="tel:+79259155109" class="callback-phone">+7 (925) 915-51-09</a>
         </div>
         <!-- /.callback-wrapper -->
       </div>
@@ -770,6 +774,26 @@
 
           <button type="button" disabled id="modal-callback-accept" class="button button-primary button-order">Заказать</button>
           <p data-error-label class="form-error-label"></p>
+        </form>
+      </div>
+      <!-- /.modal__container -->
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.micromodal-slide -->
+
+  <div class="micromodal-slide" id="modal-discount" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        <form data-form-type="modal" id="callbackForm" class="form form-modal" action="mail.php" method="POST" enctype="multipart/form-data">
+          <h2 class="form-title">Получите скидку</h2>
+          <p class="modal-text form-text">Вы можете получить <strong>скидку</strong> на наши услуги, для этого вы можете выполнить одно из условий:</p>
+          <ul class="modal-list">
+            <li class="modal-list__item">- Порекомендовать нас своим знакомым</li>
+            <li class="modal-list__item">- Рассказать нам о более низкой цене на конкретную услугу у конкурентов</li>
+            <li class="modal-list__item">- Быть человеком пенсионного возраста</li>
+          </ul>
         </form>
       </div>
       <!-- /.modal__container -->
@@ -832,7 +856,7 @@
 
         <div class="callback-wrapper">
           <span class="callback-info">Ежедневно с 9:00 до 22:00</span>
-          <a href="tel:" class="callback-phone">+7 (900) 000-00-00</a>
+          <a href="tel:+79259155109" class="callback-phone">+7 (925) 915-51-09</a>
         </div>
         <!-- /.callback-wrapper -->
         <button data-callback-button class="button button-primary">Заказать звонок</button>
