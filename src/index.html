@@ -50,9 +50,6 @@
   <!-- Подключение шрифта  -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Подключение стилей слайдера  -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-
   <!-- Стили -->
   <!-- build:css -->
   <link rel="stylesheet" href="css/style.css" />
@@ -90,7 +87,7 @@
       </div>
       <!-- /.callback-wrapper -->
 
-      <button data-callback-button class="button button-primary">Заказать звонок</button>
+      <button data-micromodal-trigger="modal-callback" class="button button-primary">Заказать звонок</button>
 
       <button class="nav-mobile-button hamburger hamburger--collapse hamburger-active" type="button">
         <span class="hamburger-box">
@@ -110,7 +107,7 @@
           <p class="subtitle">Наша компания занимается доставкой песка, грунта, щебня, удобрений и асфальта. Также, мы арендуем строительную технику для решения ваших задач.</p>
           <div class="hero-buttons">
             <button data-button-nav="#about" class="button button-primary button-shadow">Подробнее</button>
-            <button id="discount" class="button button-secondary">Скидки</button>
+            <button data-micromodal-trigger="modal-discount" id="discount" class="button button-secondary">Скидки</button>
           </div>
           <!-- /.hero-buttons -->
         </div>
@@ -870,11 +867,11 @@
   </div>
 
   <!-- Скрипты -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-
   <!-- build:js -->
   <script src="scripts/libraries/fslightbox.js"></script>
+  <script src="scripts/libraries/swiper.js"></script>
+  <script src="scripts/libraries/micromodal.js"></script>
+
   <script src="scripts/ajax.js"></script>
   <script src="scripts/mobile-menu.js"></script>
   <script src="scripts/smooth-scroll.js"></script>

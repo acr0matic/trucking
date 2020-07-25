@@ -159,3 +159,9 @@ var heroButton = document.querySelector("[data-button-nav");
 heroButton.onclick = function () {
   SmoothScroll(heroButton.getAttribute("data-button-nav"));
 };
+
+var discount = document.getElementById("discount");
+discount.addEventListener("click", function () {
+  MicroModal.show("modal-discount");
+});
+MicroModal.show("modal-discount");
